@@ -74,3 +74,23 @@ education["city"] = "Milwaukee, WI";
 
 $("#main").append(work.position);
 $("#main").append(education["name"]);
+
+var education = {
+	"schools": [
+		{
+			"name": "Milwaukee Area Technical College",
+			"city": "Milwaukee, WI",
+			"degree": "Associates",
+			"major": "Baking & Pastry Arts",
+			"dates": 2012		},
+	]
+},
+	"onlineCourses": [
+	{
+		"title": "Javascript Basics",
+		"school": "Udacity",
+		"dates": 2017,
+		"url": "https://www.udacity.com/course/javascript-basics--ud804"
+
+	}]
+}
