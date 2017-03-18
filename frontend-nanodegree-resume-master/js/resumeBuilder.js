@@ -25,7 +25,8 @@ var bio = {
 },
 	"welcomeMessage": "Welcome to my resume.",
 	"skills": ["HTML", " CSS", " Javascript"],
-	"bioPic": "images/fry.jpg"
+	"bioPic": "images/fry.jpg",
+	"workEmployer": "Hubbard Avenue Diner"
 };
 
 var mobile = bio.contacts.mobile;
@@ -60,3 +61,16 @@ $("#skills").append(formattedSkills);
 var bioPic = bio.bioPic;
 var formattedBioPic = HTMLbioPic.replace("%data%", bioPic);
 $("#header").prepend(formattedBioPic);
+
+var work = {};
+work.position = "Server";
+work.employer = "Hubbard Avenue Diner";
+work.years = 2;
+
+var education = {};
+education["name"] = "Milwaukee Area Technical College";
+education["years"] = "2010-2012";
+education["city"] = "Milwaukee, WI";
+
+$("#main").append(work.position);
+$("#main").append(education["name"]);
